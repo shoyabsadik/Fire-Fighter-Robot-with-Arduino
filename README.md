@@ -1,129 +1,7 @@
 # 🔥 Arduino Fire Fighter Robot
 
-An autonomous fire-fighting robot built using Arduino, flame sensor, servo motor, relay module, and L298N motor driver.  
-This robot detects fire, moves toward the flame, activates a water pump, and sprays water using a rotating servo mechanism.
-
----
-
-# 🚀 Project By
-
-### ⚡ Pico Robotics  
-Innovative Robotics & IoT Solutions
-
-### 🔧 MSS ElectroTech
-
----
-
-# 📌 Features
-
-- 🔥 Automatic fire detection
-- 🚗 Autonomous movement toward fire
-- 💧 Water pump activation using relay
-- 🎯 Servo-based water spraying system
-- ⚡ L298N motor driver controlled movement
-- 🤖 Beginner-friendly Arduino project
-
----
-
-# 🛠️ Components Required
-
-| Component | Quantity |
-|---|---|
-| Arduino UNO | 1 |
-| L298N Motor Driver | 1 |
-| DC Motors | 2 |
-| Robot Chassis | 1 |
-| Flame Sensor | 1 |
-| Servo Motor | 1 |
-| Relay Module | 1 |
-| Water Pump | 1 |
-| Battery Pack | 1 |
-| Jumper Wires | Several |
-
----
-
-# 🔌 Pin Configuration
-
-| Component | Arduino Pin |
-|---|---|
-| Motor ENA | 5 |
-| Motor IN1 | 10 |
-| Motor IN2 | 9 |
-| Motor IN3 | 8 |
-| Motor IN4 | 7 |
-| Motor ENB | 6 |
-| Flame Sensor | 4 |
-| Servo Motor | 3 |
-| Relay Module | 11 |
-
----
-
-# ⚙️ Working Principle
-
-1. The flame sensor continuously checks for fire.
-2. When fire is detected:
-   - The robot moves forward.
-   - Stops near the fire source.
-   - Turns ON the water pump using the relay.
-3. The servo motor rotates left and right to spray water over a wider area.
-4. After extinguishing:
-   - Pump turns OFF
-   - Servo returns to center position.
-
----
-
-# 📂 Arduino Code
-
-The project uses:
-- `Servo.h` library
-- PWM motor speed control
-- Digital flame sensing
-- Relay-based pump switching
-
----
-
-# 🧠 Future Improvements
-
-- Add obstacle avoidance
-- Add Bluetooth/WiFi control
-- Add smoke sensor
-- Add ESP32-CAM live streaming
-- Add automatic path planning
-- Add IoT fire alert notification system
-
----
-
-# 📸 Project Preview
-
-You can add:
-- Circuit Diagram
-- Robot Images
-- Demo Video
-- Working GIF
-
-inside this repository.
-
----
-
-# ▶️ How to Upload Code
-
-1. Install Arduino IDE
-2. Select:
-   - Board → Arduino UNO
-   - Correct COM Port
-3. Install Servo library (if needed)
-4. Upload the code
-5. Power the robot and test
-
----
-
-# 📚 Applications
-
-- Fire safety projects
-- Robotics competitions
-- STEM education
-- Engineering learning
-- Smart safety systems
+An intelligent fire detection and extinguishing robot built using Arduino UNO, flame sensor, servo motor, and L298N motor driver.  
+The robot detects fire automatically, moves toward the flame, and activates a water pump to extinguish it.
 
 ---
 
@@ -131,9 +9,159 @@ inside this repository.
 
 ## M. Shoyab Sadik
 
-- 🌐 Website: https://shoyab-sadik.github.io/
-- 💼 LinkedIn: https://www.linkedin.com/in/m-shoyab-sadik/
+- 🌐 Website: https://shoyabsadik.github.io/
+- 💼 LinkedIn: https://www.linkedin.com/in/shoyabsadik/
 - 📱 WhatsApp: +8801575317604
+
+---
+
+# 🚀 Project By
+
+## ⚡ Pico Robotics  
+Innovative Robotics, IoT & Automation Solutions
+
+## 🔧 MSS ElectroTech
+
+---
+
+# 📌 Overview
+
+This robot uses a flame sensor to detect fire and a servo-mounted system to spray water in different directions.  
+It then moves toward the fire source and activates the pump automatically to extinguish the fire.
+
+---
+
+# ⚙️ Features
+
+- 🔥 Automatic fire detection system
+- 🚗 Autonomous movement toward fire
+- 💧 Water pump control using relay
+- 🎯 Servo-based water spraying mechanism
+- ⚡ L298N motor driver control
+- 🤖 Smart fire response system
+
+---
+
+# 🛠️ Components Used
+
+| Component | Quantity |
+|----------|----------|
+| Arduino UNO | 1 |
+| L298N Motor Driver | 1 |
+| Flame Sensor | 1 |
+| Servo Motor | 1 |
+| Relay Module | 1 |
+| Water Pump | 1 |
+| DC Motors | 2 |
+| Robot Chassis | 1 |
+| Battery Pack | 1 |
+| Jumper Wires | As required |
+
+---
+
+# 🔌 Pin Configuration
+
+| Component | Arduino Pin |
+|----------|-------------|
+| ENA | 5 |
+| IN1 | 10 |
+| IN2 | 9 |
+| IN3 | 8 |
+| IN4 | 7 |
+| ENB | 6 |
+| Flame Sensor | 4 |
+| Servo | 3 |
+| Relay | 11 |
+
+---
+
+# ⚙️ Working Principle
+
+1. Flame sensor continuously detects fire.
+2. When fire is detected:
+   - Robot moves toward the fire source
+3. Robot stops near the flame.
+4. Relay activates water pump.
+5. Servo motor rotates to spray water in multiple directions.
+6. Fire is extinguished and system resets.
+
+---
+
+# 📂 Arduino Code
+
+The system includes:
+- Flame sensor detection logic
+- Motor control using L298N
+- Servo-based spraying system
+- Relay-controlled water pump activation
+
+👉 Full code is available in the repository file.
+
+---
+
+# 🧠 Algorithm Logic
+
+```
+IF flame detected:
+    move forward
+    stop near fire
+    turn ON pump
+    rotate servo to spray water
+ELSE:
+    stop motors
+    pump OFF
+```
+
+---
+
+# 🔧 Function Highlights
+
+- `flame detection` → detects fire
+- `motor control functions` → movement system
+- `servo_rotation()` → water spraying
+- `relay control` → pump ON/OFF system
+
+---
+
+# 📸 Project Preview
+
+Add:
+- Robot image
+- Circuit diagram
+- Working video
+- Demo GIF
+
+---
+
+# ▶️ How to Run
+
+1. Open Arduino IDE
+2. Select Arduino UNO board
+3. Connect components as per wiring
+4. Upload code
+5. Power the robot
+6. Test fire detection system
+
+---
+
+# 📚 Applications
+
+- Fire safety systems
+- Industrial safety robotics
+- Smart home protection systems
+- Robotics learning projects
+- Disaster response systems
+
+---
+
+# 🚀 Future Improvements
+
+- 📷 ESP32-CAM fire detection
+- 📡 IoT fire alert system
+- 📱 Mobile app control
+- 🤖 AI-based fire prediction
+- 🔋 Battery monitoring system
+- 🚧 Obstacle avoidance integration
 
 ---
 
@@ -146,20 +174,19 @@ Focused on:
 - IoT
 - Automation
 - AI-based systems
-- STEM Education
+- STEM education
 
 ---
 
 # ⭐ Support
 
 If you like this project:
-
-- ⭐ Star the repository
-- 🍴 Fork the project
-- 📢 Share with others
+- ⭐ Star this repository  
+- 🍴 Fork it  
+- 📢 Share with others  
 
 ---
 
 # 📜 License
 
-This project is open-source and free to use for educational purposes.
+MIT License – free to use for educational and personal projects.
